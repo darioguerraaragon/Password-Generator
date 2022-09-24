@@ -11,9 +11,42 @@
     <section class="bg-pan-lef">
         <article>
             <div class="PassWord">
-                <h1>Password-Generator</h1>
-                <br>
-                <p>Your Password Generator !!</p>
+                <div class="TextPresent">
+                    <h1>Password-Generator</h1>
+                    <br>
+                    <p><b>Your Password Generator !!</b></p>
+                </div>
+
+                <div class="generator">
+                    <div class="pass-text">
+                        <h2><b>Generate your password</b></h2>
+                    </div>
+
+                    <p class="p-guia"><b>Llene los campos a continuacion y luego<br>
+                        haga click en "Obtener" para recivir su nueva clave</b>
+                    </p>
+
+                    <div class="key">
+                        <label for="caracteres"><b>Cantidad de caracteres de la clave :</b></label>
+                        <br>
+                        <input type="number" name="cantidad-caracteres" id="caracteres">
+                        <br>
+                        <br>
+                        <p class="danger none">La cantidad de caracteres de la clave<br>
+                            no puede ser mayor a 9 !!
+                        </p>
+                        <br>
+                        <br>
+                        <div class="clave-generada none">
+                            <h3>Su clave es :</h3>
+                            <br>
+                            <h4>clave</h4>
+                        </div>
+                        
+                        <button class="btn"><b>Obtener</b></button>
+                    </div>
+                </div>
+                
             </div>
             <div class="PassWordImg">
                 <img src="./PassImgs/hacker-seguridad.jpg" class="Seguridad">
