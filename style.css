@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+article {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.PassWord{
+  width: 50%;
+  min-height: 100vh;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.PassWordImg {
+  width: 50%;
+  min-height: 100vh;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.Seguridad {
+  width: 80%;
+  height: 40%;
+}
+
+.PassWord h1 {
+  font-size: 3rem;
+}
