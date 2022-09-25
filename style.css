@@ -27,7 +27,7 @@ article {
   width: 50%;
   min-height: 100vh;
   display: flex;
-  flex-flow: row;
+  flex-flow: column;
   justify-content: center;
   align-items: center;
 }
@@ -104,4 +104,15 @@ article {
   color: white;
   background-color: rgb(28, 28, 133);
   font-size: 110%;
+}
+
+/* branch footer */
+
+.spam {
+  color: red;
+  font-size: 2rem;
+}
+
+footer small {
+  color: blue;
 }
