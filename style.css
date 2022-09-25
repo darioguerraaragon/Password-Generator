@@ -133,6 +133,12 @@ footer small {
 
   .PassWordImg {
     width: 100%;
+    min-height: 50vh;
+    text-align: center;
+  }
+
+  .PassWord {
+    width: 100%;
   }
 
 }
