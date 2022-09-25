@@ -116,3 +116,23 @@ article {
 footer small {
   color: blue;
 }
+
+/* responsive branch */
+
+@media (max-width:850px){
+  article {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .generator {
+    width: 100%;
+  }
+
+  .PassWordImg {
+    width: 100%;
+  }
+
+}
