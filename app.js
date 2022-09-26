@@ -19,28 +19,33 @@ let Numeros = [1 ,2 , 3 , 4 , 5 , 6 , 7 , 8 , 9 , 0]
 
 // funcionalidad
 btn.addEventListener("click" , e =>{
-    //console.log(caracteres.value)
     let contador = 0
     let Obtener = "Obtener"
     btn.classList.add("btn2")
     clave_generada.classList.toggle("none")
     
+    
     if(clave_generada.classList.contains("none")){
         btn.innerHTML = `<b>${Obtener}</b>`
-        // let index = 0
-        // PassArray.splice(index , caracteres.value)
+        // console.log("vaciar el array")
+
+        PassArray = []
+        // console.log(PassArray)
+        
     } else {
         btn.innerHTML = `<b>${text}</b>`
+        // console.log("dejarlo")
+        PassArray = []
     }
 
     while(contador < caracteres.value){
         if(caracteres.value % 2 === 0){
             let PassNum = Math.floor(Math.random()*11)
-            console.log(PassNum)
+            // console.log(PassNum)
             let PassLet = Math.floor(Math.random()*27)
             let result = Mayuscula[PassLet]
     
-            console.log(result)
+            // console.log(result)
 
             PassArray.push(PassNum , result)
             PassArray.slice("-")
@@ -59,5 +64,4 @@ btn.addEventListener("click" , e =>{
             }
             contador += 1
         }
-    }     
-})
+    }})
