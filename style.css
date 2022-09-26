@@ -142,3 +142,11 @@ footer small {
   }
 
 }
+
+/* github sticker */
+
+.github {
+  width: 7%;
+  height: 7%;
+  margin-top: 20px;
+}
