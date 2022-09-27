@@ -23,6 +23,8 @@ btn.addEventListener("click" , e =>{
     let Obtener = "Obtener"
     btn.classList.add("btn2")
     clave_generada.classList.toggle("none")
+
+    
     
     
     if(clave_generada.classList.contains("none")){
@@ -39,6 +41,15 @@ btn.addEventListener("click" , e =>{
     }
 
     while(contador < caracteres.value){
+
+        if(caracteres.value >= 9){
+            danger.classList.remove("none")
+            PassArray = []
+            break
+        }else{
+            danger.classList.add("none")
+        }
+
         if(caracteres.value % 2 === 0){
             let PassNum = Math.floor(Math.random()*11)
             // console.log(PassNum)
