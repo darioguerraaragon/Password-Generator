@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+    <div id="div"></div>
     <section class="bg-pan-lef">
         <article>
             <div class="PassWord">
@@ -29,21 +30,21 @@
                     <div class="key">
                         <label for="caracteres"><b>Cantidad de caracteres de la clave :</b></label>
                         <br>
-                        <input type="number" name="cantidad-caracteres" id="caracteres">
+                        <input type="number" name="cantidad-caracteres" id="caracteres" value="">
                         <br>
                         <br>
-                        <p class="danger none">La cantidad de caracteres de la clave<br>
+                        <p class="danger none" id="danger">La cantidad de caracteres de la clave<br>
                             no puede ser mayor a 9 !!
                         </p>
                         <br>
                         <br>
-                        <div class="clave-generada none">
+                        <div class="clave-generada none" id="clave-generada">
                             <h3>Su clave es :</h3>
                             <br>
-                            <h4>clave</h4>
+                            <div id="keyhere"></div>
                         </div>
                         
-                        <button class="btn"><b>Obtener</b></button>
+                        <button class="btn" id="btn"><b>Obtener</b></button>
                     </div>
                 </div>
                 <br>
@@ -51,7 +52,7 @@
             </div>
             
             <div class="PassWordImg">
-                <h2 class="spam">Impruve your segurity !!</h2>
+                <h2 class="spam">Impruve your security !!</h2>
                 <img src="./PassImgs/hacker-seguridad.jpg" class="Seguridad">
                 
                 <footer>
