@@ -48,20 +48,24 @@ btn.addEventListener("click" , e =>{
             // console.log(result)
 
             PassArray.push(PassNum , result)
-            PassArray.slice("-")
-            let keyhere = d.querySelector("#keyhere").innerHTML = `<b>${PassArray}</b>`
+            // PassArray.split("-")
+            let keyhere = d.querySelector("#keyhere").innerHTML = `<h3><b>${PassArray}</b></h3>`
 
             contador += 2
             
         }else{
             if(contador % 2 != 0){
                 let PassNum = Math.floor(Math.random()*11)
-                console.log(PassNum)
+                PassArray.push(PassNum)
+                // console.log(PassNum)
             }else{
                 let PassLet = Math.floor(Math.random()*27)
                 let result = Mayuscula[PassLet]
-                console.log(result)
+                PassArray.push(result)
+                // console.log(result)
             }
+            // console.log(PassArray)
+            let keyhere = d.querySelector("#keyhere").innerHTML = `<h3><b>${PassArray}</b></h3>`
             contador += 1
         }
     }})
