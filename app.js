@@ -1,12 +1,11 @@
 // todas las variables
 const d = document
 let caracteres = d.querySelector("#caracteres")
-let danger = d.querySelector("#danger")
-let clave_generada = d.querySelector("#clave-generada")
-let btn = d.querySelector("#btn")
-let text = "Cerrar"
+const danger = d.querySelector("#danger")
+const clave_generada = d.querySelector("#clave-generada")
+const btn = d.querySelector("#btn")
+const text = "Cerrar"
 let PassArray = []
-
 
 
 // Caracteres a generar
@@ -15,12 +14,10 @@ Mayuscula = ["A" , "B" , "C" , "D" , "E" , "F" , "G" , "H" ,
 "U" , "V" , "W" , "X" , "Y" , "Z"]
 
 
-let Numeros = [1 ,2 , 3 , 4 , 5 , 6 , 7 , 8 , 9 , 0]
-
 // funcionalidad
 btn.addEventListener("click" , e =>{
     let contador = 0
-    let Obtener = "Obtener"
+    const Obtener = "Obtener"
     btn.classList.add("btn2")
     clave_generada.classList.toggle("none")
 
