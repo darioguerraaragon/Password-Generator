@@ -147,10 +147,14 @@ footer small {
 
 }
 
-/* github sticker */
+/* github icon */
 
 .github {
   width: 7%;
   height: 7%;
   margin-top: 20px;
+}
+
+.github:hover {
+  cursor: pointer;
 }
