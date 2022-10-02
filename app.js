@@ -14,7 +14,6 @@ Mayuscula = ["@" , "B" , "()" , "D" , "$" , "F" , "_" , "h" ,
 "1" , "/" , "K" , "L" , "?" , "N" , "*" , "p" , "Q" , "-" , "S" , "!" , 
 "U" , "+" , "#" , "X" , "%" , "z"]
 
-
 // funcionalidad
 btn.addEventListener("click" , e =>{
     let contador = 0
@@ -44,7 +43,7 @@ btn.addEventListener("click" , e =>{
 
         if(caracteres.value % 2 === 0){
             let PassNum = Math.floor(Math.random()*11)
-            let PassLet = Math.floor(Math.random()*27)
+            let PassLet = Math.floor(Math.random()*26)
             let result = Mayuscula[PassLet]
 
             PassArray.push(PassNum , result)
